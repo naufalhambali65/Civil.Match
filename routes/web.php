@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('jobseeker/{jobseeker}', [HomeController::class, 'jobseekerDetail']);
+Route::get('jobseeker', [HomeController::class, 'jobSeeker']);
+Route::get('joblist', [HomeController::class, 'joblist']);
+Route::get('joblist/{joblist}', [HomeController::class, 'joblistDetail']);
 
 
 

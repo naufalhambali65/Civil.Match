@@ -51,12 +51,12 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
 
-    public function companies(): HasOne
+    public function company(): HasOne
     {
         return $this->hasOne(Company::class);
     }
 
-    public function jobseekers(): HasOne
+    public function jobseeker(): HasOne
     {
         return $this->hasOne(JobSeeker::class);
     }
